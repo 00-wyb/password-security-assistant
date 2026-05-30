@@ -56,9 +56,14 @@ class AIClient:
         # 构建脱敏特征描述
         pwned_status = f"已泄露 {pwned_count:,} 次" if is_pwned else "未泄露"
         
+        # 修复后（脱敏）
         patterns_text = ""
         if patterns_found:
-            patterns_text = f"检测到的风险模式: {', '.join(patterns_found)}"
+            # 只传递模式数量和风险等级，不传递具体模式名称
+            risk_level = "高" if len(patterns_found) >= 2 else "中" if len(patterns_found) == 1 else "低"
+            patterns_text = f"检测到 {len(patterns_found)} 个风险模式（风险等级: {risk_level}）"
+        else:
+            patterns_text = "未检测到明显风险模式"
         
         # 构建提示词
         system_prompt = """你是一位资深的密码安全专家，擅长用通俗易懂的语言解释密码安全风险。
