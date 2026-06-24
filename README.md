@@ -64,7 +64,7 @@
 
 ### 方式一：在线使用（推荐）
 
-直接访问：[https://password-assistant.streamlit.app](https://your-app-name-xxx.streamlit.app)
+直接访问：[https://password-assistant.streamlit.app](https://password-assistant.streamlit.app)
 
 ### 方式二：本地运行
 
