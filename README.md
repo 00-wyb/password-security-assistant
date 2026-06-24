@@ -10,7 +10,7 @@
 
 ## 🌐 在线演示
 
-**👉 [点击访问在线应用](https://your-app-name-xxx.streamlit.app)**
+**👉 [点击访问在线应用](https://password-assistant.streamlit.app)**
 
 无需安装，打开即用，零登录、零注册。
 
@@ -64,13 +64,13 @@
 
 ### 方式一：在线使用（推荐）
 
-直接访问：[https://your-app-name-xxx.streamlit.app](https://your-app-name-xxx.streamlit.app)
+直接访问：[https://password-assistant.streamlit.app](https://your-app-name-xxx.streamlit.app)
 
 ### 方式二：本地运行
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/your-username/password-security-assistant.git
+git clone https://github.com/00-wyb/password-security-assistant.git
 cd password-security-assistant
 
 # 2. 创建虚拟环境
